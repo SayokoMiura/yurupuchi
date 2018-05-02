@@ -1,0 +1,18 @@
+AddHandler x-httpd-php70 .php
+suPHP_ConfigPath /home/ai103l3gla/html/
+<FilesMatch "^(\.htaccess|\.htpasswd|php\.ini|.*\.sql|.*\.log|.*\.cron|.*\.inc|.*\.phps|.*\.yml)$">
+  Deny from all
+</FilesMatch>
+Options +SymLinksIfOwnerMatch
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

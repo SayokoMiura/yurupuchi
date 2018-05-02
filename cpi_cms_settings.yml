@@ -1,0 +1,4 @@
+cpi_cms_settings:
+    database: ai103l3gla_wordpress
+    is_four: 56
+    files: cpi_cms_settings.yml index.php license.txt php.ini readme.html wp-activate.php wp-blog-header.php wp-comments-post.php wp-config-sample.php wp-cron.php wp-admin wp-links-opml.php wp-load.php wp-login.php wp-mail.php wp-settings.php wp-content wp-signup.php wp-includes wp-trackback.php xmlrpc.php .htaccess
